@@ -1,0 +1,32 @@
+{
+    "name": "blank-framework/application",
+    "description": "Package for Blank Framework Application classes",
+    "type": "libary",
+    "require": {
+        "blank-framework/routing-interfaces": "^1.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.2",
+        "squizlabs/php_codesniffer": "^3.10",
+        "phpstan/phpstan": "^1.11",
+        "pestphp/pest": "^2.34"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BlankFramework\\Application\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrian du Plessis",
+            "email": "adrian@blankframework.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
