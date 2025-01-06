@@ -3,7 +3,9 @@
     "description": "Package for Blank Framework Application classes",
     "type": "libary",
     "require": {
-        "blank-framework/routing-interfaces": "^1.0"
+        "blank-framework/routing-interfaces": "^1.0",
+        "blank-framework/application-interface": "^1.0",
+        "psr/log": "^3.0"
     },
     "require-dev": {
         "rector/rector": "^1.2",
