@@ -22,6 +22,7 @@ class Application implements ApplicationInterface
         try {
             $route = $this->router->routeRequest($request);
             $response = $route->handleRequest($request);
+            $this->sendResponse($response);
         } catch (\Throwable $throwable) {
             $this->logger->error(
                 'Exception occurred while routing request',
